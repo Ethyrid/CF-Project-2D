@@ -55,5 +55,6 @@ scale = Vector2(0.125, 0.203125)
 texture = ExtResource("2_wocfj")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+visible = false
 sprite_frames = SubResource("SpriteFrames_5nla0")
 animation = &"Run"
