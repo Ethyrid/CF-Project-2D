@@ -1,0 +1,199 @@
+[gd_scene load_steps=5 format=3 uid="uid://bkb1g67xo8viw"]
+
+[ext_resource type="Texture2D" uid="uid://dlukt75fjeek2" path="res://R.png" id="1_gnumu"]
+[ext_resource type="Script" path="res://control.gd" id="1_wsox1"]
+[ext_resource type="AudioStream" uid="uid://cpr5u58l0xn2w" path="res://no-place-to-go-216744.mp3" id="3_7o65m"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_5ay0h"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 650.0
+script = ExtResource("1_wsox1")
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.997
+offset_bottom = -0.0500488
+texture = ExtResource("1_gnumu")
+expand_mode = 3
+flip_h = true
+flip_v = true
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.174
+anchor_right = 0.124
+anchor_bottom = 0.215
+offset_left = -0.32
+offset_top = -0.100006
+offset_right = 0.151993
+offset_bottom = 0.25
+text = "Video"
+
+[node name="OptionButton" type="OptionButton" parent="Control/Label"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.194
+anchor_top = -0.333
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -0.0179996
+offset_top = -0.00899982
+offset_right = 2.0
+offset_bottom = 5.0
+grow_horizontal = 2
+grow_vertical = 2
+item_count = 4
+popup/item_0/text = "16:9"
+popup/item_0/icon = SubResource("ViewportTexture_5ay0h")
+popup/item_1/text = "3:4"
+popup/item_1/id = 1
+popup/item_2/text = "16:10"
+popup/item_2/id = 2
+popup/item_3/text = "21:9"
+popup/item_3/id = 3
+
+[node name="Label2" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.174
+anchor_right = 0.124
+anchor_bottom = 0.215
+offset_left = 385.68
+offset_top = 0.899994
+offset_right = 386.152
+offset_bottom = 1.25
+text = "Accesibilidad"
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.174
+anchor_right = 0.124
+anchor_bottom = 0.215
+offset_left = 546.68
+offset_top = -3.10001
+offset_right = 547.152
+offset_bottom = -2.75
+text = "Accesibilidad"
+
+[node name="Label5" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.174
+anchor_right = 0.124
+anchor_bottom = 0.215
+offset_left = 265.68
+offset_top = -0.100006
+offset_right = 266.152
+offset_bottom = 0.25
+text = "Sonido"
+horizontal_alignment = 1
+
+[node name="Label6" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.174
+anchor_right = 0.124
+anchor_bottom = 0.215
+offset_left = 144.68
+offset_top = -2.10001
+offset_right = 145.152
+offset_bottom = -1.75
+text = "Graficos"
+
+[node name="Label7" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.174
+anchor_right = 0.124
+anchor_bottom = 0.215
+offset_left = 677.68
+offset_top = -0.100006
+offset_right = 678.152
+offset_bottom = 0.25
+text = "Accesibilidad"
+
+[node name="Label8" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.174
+anchor_right = 0.124
+anchor_bottom = 0.215
+offset_left = 451.68
+offset_top = -75.1
+offset_right = 452.152
+offset_bottom = -74.75
+text = "Options
+"
+
+[node name="Btn_Back" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.733
+anchor_top = 0.826
+anchor_right = 0.943
+anchor_bottom = 0.968
+offset_left = -0.416016
+offset_top = 0.0999756
+offset_right = -0.33606
+offset_bottom = -0.200012
+text = "Volver"
+
+[node name="Btn_Guardar_Cambios" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.733
+anchor_top = 0.826
+anchor_right = 0.943
+anchor_bottom = 0.968
+offset_left = -276.416
+offset_top = -0.900024
+offset_right = -276.336
+offset_bottom = -1.20001
+text = "Guardar
+Cambios"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Control"]
+stream = ExtResource("3_7o65m")
+autoplay = true
+
+[node name="MenuBar" type="MenuBar" parent="Control"]
+layout_mode = 0
+offset_left = 173.0
+offset_top = 105.0
+offset_right = 259.0
+offset_bottom = 146.0
+
+[node name="MenuButton" type="MenuButton" parent="Control/MenuBar"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.163
+anchor_top = 1.0
+anchor_right = 1.79
+anchor_bottom = 5.269
+offset_left = 0.0180006
+offset_top = -8.0
+offset_right = 155.06
+offset_bottom = 388.971
+scale = Vector2(0.52, 0.319999)
+text = "hola
+"
+
+[connection signal="button_down" from="Control/Btn_Back" to="Control" method="_on_btn_back_button_down"]

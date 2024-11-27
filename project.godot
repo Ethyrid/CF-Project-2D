@@ -10,8 +10,8 @@ config_version=5
 
 [application]
 
-config/name="Godot CF"
-run/main_scene="res://Escenas/node_2d.tscn"
+config/name="Menu"
+run/main_scene="res://Menu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
